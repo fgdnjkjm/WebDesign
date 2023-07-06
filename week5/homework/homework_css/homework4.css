@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+}
+
+
+div#Div_2 {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    text-align: center;
+    width: 400px;
+    padding: 80px;
+    margin-top: 200px;
+    height: 220px;
+    margin-left: 170px;
+}
+
+div#Div_2 h1 {
+    font-family: "Lato", Arial, sans-serif;
+    color: white;
+}
+
+div#Div_2 h1 span.italic {
+    font-style: italic;
+}
+
+div#Div_2 p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    width: 380px;
+    text-align: center;
+    font-size: 20px;
+}
+
+div#Div_3 {
+    border-left: 1px solid;
+    border-right: 2px solid white;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    text-align: center;
+    width: 400px;
+    padding: 80px 150px 80px 80px;
+    margin-left: 800px;
+    margin-top: -380px;
+    height: 215px;
+
+}
+
+div#Div_3 img {
+    margin-top: -85px;
+    width: 400px;
+    height: 380px;
+}
