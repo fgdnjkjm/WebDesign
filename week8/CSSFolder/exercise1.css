@@ -1,0 +1,129 @@
+body {
+    background-color: gray;
+}
+
+/* Navigation */
+div#navigation {
+    background-color: white;
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 1024px; */
+}
+
+.nav {
+    display: flex;
+    background-color: white;
+    height: 30px;
+    padding: 10px;
+}
+
+.nav .left {
+    display: flex;
+    margin-right: auto;
+    color: red;
+}
+
+.right {
+    display: flex;
+    margin-left: auto;
+}
+
+.right div {
+    margin-right: 10px;
+}
+
+.right img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 10px;
+    border-radius: 50%;
+}
+
+/* MyPicture */
+.container .MyPicture img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/* Container */
+.container img {
+    height: auto;
+    width: 100%
+}
+
+.container {
+    position: relative;
+}
+
+/* bottom left */
+.bottomleft {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 24px;
+}
+
+.bottomleft img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/* bottom right */
+.bottomRight {
+    position: absolute;
+    color: red;
+    border: dashed #f2f2f2;
+    bottom: 0;
+    right: 0;
+    font-size: 24px;
+    padding: 10px;
+    padding-right: 90px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.bottomRight h2 {
+    font-size: 24px;
+    color: yellow;
+    font-weight: bold;
+}
+
+.rightArrow {
+    position: absolute;
+    right: 40px;
+    bottom: 87px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+
+}
+
+/* below center */
+.belowcenter {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    top: 20%;
+
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
