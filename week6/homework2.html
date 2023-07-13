@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Homework2</title>
+    <link rel="stylesheet" href="../week6/CSSFolder/homework2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container-wrapper">
+        <div id="Header" class="header-menu">
+            <div>
+                <img src="../week6/img/Hololive-Logo-2016.png" alt="Hololive Logo">
+            </div>
+
+        </div>
+        <div class="right-column right1">
+            <div class="right1">
+                <div class="phone">
+                    <div>
+                        <p>017-8202032</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div>
+            Home
+        </div>
+        <div>
+            Contact
+        </div>
+        <div>
+            About us
+        </div>
+    </div>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <div> <img src="../week6/img/Nakiri_Ayame_Portrait.webp" alt="Ayame"></div>
+            <div class="text">Nakiri Ayame</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <div>
+                <img src="../week6/img/Shirakami-Fubuki_list_thumb.png" alt="Fubuki">
+            </div>
+
+            <div class="text">Shirakami Fubuki</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <div><img src="../week6/img/Ookami_Mio.webp" alt="Ookami_Mio"></div>
+            <div class="text">Ookami Mio</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <div class="image-container">
+
+        <div> <img src="../week6/img/Hololive-Logo-2016.png" alt="Image 1"></div>
+        <div> <img src="../week6/img/Hololive-Logo-2016.png" alt="Image 2"></div>
+        <div> <img src="../week6/img/Hololive-Logo-2016.png" alt="Image 3"></div>
+        <div> <img src="../week6/img/Hololive-Logo-2016.png" alt="Image 4"></div>
+
+
+
+    </div>
+    <div id="content">
+        <div id="text-content">
+            <h1>Hololive Member</h1>
+            <p>Nakiri Ayame, Shirakami Fubuki, Ookami Mio</p>
+        </div>
+        <div id="sidebar">
+            <h1>About me</h1>
+            <p>Hololive Fans</p>
+        </div>
+    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+
+</html>

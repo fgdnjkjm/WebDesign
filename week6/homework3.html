@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Homework3</title>
+    <link rel="stylesheet" href="../week6/CSSFolder/homework3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container-wrapper">
+        <div id="Header">
+            <div>
+                <img src="../week6/img/nakiri-ayame-ayame.gif" alt="Ayame Gif">
+            </div>
+        </div>
+        <div class="right-column right1">
+            <div class="right1">
+                <div class="Myname">
+                    <div>
+                        <p>LEE SIANG WEI</p>
+                    </div>
+                </div>
+                <div class="Description">
+                    <div id="Myself"><img src="../week6/img/Mypicture.jpeg" alt="MyPicture"></div>
+                    <div>
+                        <p>I love to see anime and horror movie</p>
+                        <p>Hololive Fans</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Slideshow-Header">
+        <h1>Press Next Icon To See My Current Weekly Homework</h1>
+    </div>
+    <!-- slideshow-homework -->
+
+    <div class="slideshow-homework">
+        <div id="slideshow-image">
+            <img src="../week6/img/Ayame.gif" alt="Ayame Gif">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">Week 2</div>
+            <div class="content">
+                <div>
+                    <p>For Week 2, I only have one exercise and this exercise is my first HTML</p>
+                </div>
+                <div class="row-column-container">
+                    <div class="homework">
+                        <ol>
+                            <li> <a href="../week6/week2/index.html">index</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">Week 4</div>
+            <div class="content">
+                <div>
+                    <p>For Week 4, I do a self introduction in myself and index is using lecturer website to adjust
+                        content</p>
+                </div>
+                <div class="row-column-container">
+                    <div class="homework">
+                        <ol>
+                            <li> <a href="../week6/week4/myself.html">myself</a></li>
+                            <li> <a href="../week6/week4/exercise/index.html">index</a></li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">Week 5</div>
+            <div class="content">
+                <div>
+                    <p>For Week 5, I learn about border and I need to create website according lecturer given picture
+                    </p>
+                </div>
+                <div class="row-column-container">
+                    <div class="homework">
+                        <ol>
+                            <li> <a href="../week6/week5/box_model1.html">Box Model</a></li>
+                            <li> <a href="../week6/week5/box_model2.html">Box Model 2</a></li>
+                            <li> <a href="../week6/week5/exercise.html">Exercise</a></li>
+                            <li> <a href="../week6/week5/homework/homework1.html">Homework 1</a></li>
+                            <li> <a href="../week6/week5/homework/homework2.html">Homework 2</a></li>
+                            <li> <a href="../week6/week5/homework/homework3.html">Homework 3</a></li>
+                            <li> <a href="../week6/week5/homework/homework4.html">Homework 4</a></li>
+                            <li> <a href="../week6/week5/homework/homework5.html">Homework 5</a></li>
+
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">Week 6</div>
+            <div class="content">
+                <div>
+                    <p>For Week 6, I learn about Layout and I put all Homework at Homework 3</p>
+                </div>
+                <div class="row-column-container">
+                    <div class="homework">
+                        <ol>
+                            <li> <a href="../week6/index.html">index</a></li>
+                            <li> <a href="../week6/exercise2.html">Exercise 2</a></li>
+                            <li> <a href="../week6/homework1.html">Homework 1</a></li>
+                            <li> <a href="../week6/homework2.html">Homework 2</a></li>
+                            <li> <a href="../week6/homework3.html">Homework 3</a></li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

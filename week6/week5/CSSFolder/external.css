@@ -1,0 +1,51 @@
+body {
+    background-color: lightblue;
+
+}
+
+h1 {
+    color: white;
+    margin-left: 45px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("../Img/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    background-attachment: fixed;
+}
+
+div#MyPicture {
+    text-align: center;
+    background-image: url("../Img/HD-wallpaper-nahida-anime-pretty-cute-girl-genshin-impact-forest-female.jpg");
+    background-attachment: fixed;
+}
+
+h2 {
+    color: white;
+    margin-left: 35px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+p {
+    color: white;
+    margin-left: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("../Img/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    background-attachment: fixed;
+}
+
+div#TestPicture {
+    color: white;
+    text-align: center;
+    background-image: url("../Img/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    background-attachment: fixed;
+
+}
+
+div#TestPicture p {
+    color: white;
+    text-align: center;
+    background-image: url(../Img/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+
+}

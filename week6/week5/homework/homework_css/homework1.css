@@ -1,0 +1,44 @@
+div {
+    margin: -8px 0px 0px 50px;
+}
+
+
+div#Div_1 {
+    background-image: url("../img/homework1.png");
+    background-position: right top;
+    width: 1350px;
+    height: 700px;
+    padding-bottom: 25px;
+    background-repeat: no-repeat;
+    background-size: 45%;
+}
+
+
+div#Div_2 {
+    margin-top: 140px;
+    padding: 50px 110px 150px 80px;
+    width: 500px;
+    height: 165px;
+    position: absolute;
+    background-color: white;
+    border: 7px solid black;
+    left: -55px;
+    text-align: center;
+
+}
+
+div#Div_2 h1 {
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 70px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+div#Div_2 p {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    width: auto;
+    font-size: 25px;
+    text-align: center;
+
+}
