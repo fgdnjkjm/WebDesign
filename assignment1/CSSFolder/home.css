@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121120;
+
+}
+
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    /* Add this to create a stacking context for absolute positioning */
+    max-height: 50px;
+}
+
+.logo img {
+    max-height: 80px;
+    /* Adjust the height according to your logo */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-right: 60px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+    /* Remove the margin from the last item to avoid extra spacing */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu li.active a {
+    /* Style the active link here */
+    color: #D513F5;
+    /* For example, you can set the color to red */
+    font-weight: bold;
+    /* Make the active link bold */
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    /* Horizontally center the content */
+    align-items: center;
+    /* Vertically center the content */
+    height: calc(100vh - 50px);
+    /* Set the height of .content to fill the remaining viewport height */
+}
+
+.background img {
+    width: 100%;
+    /* Make sure the image scales to fit the container */
+}
+
+.Heading {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+
+}
+
+.Heading h1 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+
+
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+
+}
+
+/* below heading */
+.belowheading {
+    justify-content: center;
+    top: 20%;
+
+}
+
+.belowheading img {
+    width: 600px;
+
+}
+
+.belowheading .icon img {
+    width: 120px;
+    height: 120px;
+    border-radius: 60%;
+
+}
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.slideshow .mySlides img {
+    width: 800px;
+    height: 100%;
+}

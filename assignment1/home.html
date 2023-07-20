@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="../assignment1/CSSFolder/home.css">
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="logo">
+
+            <img src="../assignment1/img/SW-logos_white.png" alt="Logo">
+        </div>
+        <ul class="menu">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="../assignment1/about.html">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="background">
+
+        <img src="../assignment1/img/Background.png" alt="Background Image">
+        <div class="Heading">
+            <h1>I'm LEE SIANG WEI</h1>
+            <div class="belowheading">
+                <div class="icon"><img src="../assignment1/img/MyPicture1.jpeg" alt="MyPicture"></div>
+                <img src="../assignment1/img/Game Designer.png" alt="Game Designer">
+            </div>
+        </div>
+    </div>
+    <div class="slideshow">
+        <div class="mySlides"><img
+                src="../assignment1/img/Spider-Man-2-PS5-Directors-Bold-Timeline-Choices-Stir-Controversy-Among-Fans.jpg"
+                alt="Spiderman2"></div>
+        <div class="mySlides"><img src="../assignment1/img/god-of-war-ragnarok.jpg" alt="GodofWar"></div>
+        <div class="mySlides"><img src="../assignment1/img/NarakaBladepoint-Banner2.jpg" alt="Naraka"></div>
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
