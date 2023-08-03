@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="CSSFolder/about.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+
+        <div class="logo">
+            <img src="img/SW-logos_white.png" alt="My_logo">
+        </div>
+
+        <!-- NAVIGATION MENU -->
+        <div class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle">
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a id="active" href="About.html">About</a>
+                <a href="Portfolio.html">Portfolio</a>
+                <a href="Services.html">Services</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="heading">
+        <h1>About</h1>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="img/About_me.png" alt="About me png">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/About_me1.png" alt="About me png">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/About_me2.png" alt="About me png">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/About_me3.png" alt="About me png">
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
